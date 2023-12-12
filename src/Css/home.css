@@ -1,0 +1,17 @@
+
+
+.book-list{
+    background-color: beige;
+    height:calc(100vh - 60px);
+    width:100vh;
+}
+
+.tavsan{
+    width: 120px;
+    height: 160px;
+}
+
+.books{
+display: flex;
+flex-direction: column;
+}
