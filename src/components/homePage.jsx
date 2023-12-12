@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import {useNavigate } from "react-router-dom";
 import tavşan from "../images/tavşan.png";
 import "../Css/home.css"
 
 const BookList = () => {
   // Kitap listesi burada alınabilir
+
+
   const books = [
     { id: 1, title: 'Lanetli Tavşan', author: 'Bora Chung' },
     { id: 2, title: 'Book 2' },
@@ -66,13 +69,16 @@ const SeriesList = () => {
 const App = () => {
   const [activeTab, setActiveTab] = useState('books');
 
+  const navigate = useNavigate();
 
   return (
     <div>
-      <nav>
+      <nav className='navbar'>
+        <h3>MAHZEN</h3>
         <button onClick={() => setActiveTab('books')}>Kitaplar</button>
         <button onClick={() => setActiveTab('movies')}>Filmler</button>
         <button onClick={() => setActiveTab('series')}>Diziler</button>
+        <button onClick={ () => navigate("/focus")} >Focus</button>
       </nav>
 
       {activeTab === 'books' && <BookList />}

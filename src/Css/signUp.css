@@ -10,7 +10,16 @@ body {
     justify-content: center;
     height: 100vh;
   }
+
+  .navbar{
+    display: flex;
+    
+  }
   
+  button{
+    margin-left: 20px;
+  }
+
   form {
     background-color: #fff;
     padding: 20px;
