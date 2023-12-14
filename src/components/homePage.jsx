@@ -6,20 +6,22 @@ import "../Css/home.css"
 const BookList = () => {
   // Kitap listesi burada alınabilir
 
+  const navigate = useNavigate();
+
 
   const books = [
-    { id: 1, title: 'Lanetli Tavşan', author: 'Bora Chung' },
-    { id: 2, title: 'Book 2' },
+    { id: 1, title: 'Lanetli Tavşan' },
+   /*  { id: 2, title: 'Book 2' }, */
   ];
 
   return (
     <div className="book-list">
       <h2>Kitaplar</h2>
 
-      <ul className="books">
+      <ul  className="books">
           <img className="tavsan" src={tavşan}/>
         {books.map(book => (
-          <li key={book.id}>{book.title} <br/> {book.author} </li>
+          <lu key={book.id}>{book.title} </lu>
         ))}
       </ul>
     </div>
@@ -74,11 +76,11 @@ const App = () => {
   return (
     <div>
       <nav className='navbar'>
-        <h3>MAHZEN</h3>
-        <button onClick={() => setActiveTab('books')}>Kitaplar</button>
-        <button onClick={() => setActiveTab('movies')}>Filmler</button>
-        <button onClick={() => setActiveTab('series')}>Diziler</button>
-        <button onClick={ () => navigate("/focus")} >Focus</button>
+        <h3 className='app-title'>MAHZEN</h3>
+        <button className='nav-button' onClick={() => setActiveTab('books')}>Kitaplar</button>
+        <button className='nav-button' onClick={() => setActiveTab('movies')}>Filmler</button>
+        <button className='nav-button' onClick={() => setActiveTab('series')}>Diziler</button>
+        <button className='nav-button' onClick={ () => navigate("/focus")} >Focus</button>
       </nav>
 
       {activeTab === 'books' && <BookList />}

@@ -2,10 +2,15 @@
 
 .book-list{
     background-color: beige;
-    height:calc(100vh - 60px);
-    width:100vh;
+    height:calc(100vh - 130px);
+    width: 1000px;
+    
 }
 
+.app-title{
+    color: black;
+    font-size: 2rem;
+}
 .tavsan{
     width: 120px;
     height: 160px;
@@ -14,4 +19,22 @@
 .books{
 display: flex;
 flex-direction: column;
+width: 120px;
+margin: 20px;
+padding: 10px;
+background-color: orange;
+cursor: pointer;
 }
+
+.nav-button {
+    width: 60px;
+    height: 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 5px 10px;
+    
+  }
+  

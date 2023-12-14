@@ -6,6 +6,7 @@ import HomePage from './components/homePage';
 import SignUpForm from './components/signUpForm';
 import Movie from './components/movie';
 import Focus from './components/focus';
+import LanetliTavsan from './components/lanetliTavsan';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={<SignUpForm />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/focus" element={<Focus />} />
+        <Route path="/lanetlitavsan" element={<LanetliTavsan />} />
 
       </Routes>
     </Router>
