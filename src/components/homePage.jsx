@@ -16,7 +16,7 @@ const BookList = () => {
 
   return (
     <div className="book-list">
-      <h2>Kitaplar</h2>
+      <h2 className='book-title'>Kitaplar</h2>
 
       <ul  className="books">
           <img className="tavsan" src={tavşan}/>
