@@ -24,8 +24,6 @@ const SignUpForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Burada form verileriyle ne yapmak istediğinizi belirleyebilirsiniz,
-    // örneğin, bir API'ye gönderme veya başka bir işlem gerçekleştirme.
     console.log('Form submitted:', formData);
   };
 

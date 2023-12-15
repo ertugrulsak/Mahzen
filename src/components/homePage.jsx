@@ -21,7 +21,7 @@ const BookList = () => {
       <ul  className="books">
           <img className="tavsan" src={tavşan}/>
         {books.map(book => (
-          <lu key={book.id}>{book.title} </lu>
+         <button className='books-spec' onClick={() => navigate("/tavsan")}> <lu key={book.id}>{book.title} </lu></button>
         ))}
       </ul>
     </div>
@@ -41,7 +41,7 @@ const MovieList = () => {
       <h2>Filmler</h2>
       <ul>
         {movies.map(movie => (
-          <li key={movie.id}>{movie.title}</li>
+        <button >  <lu key={movie.id}>{movie.title}</lu></button>
         ))}
       </ul>
     </div>

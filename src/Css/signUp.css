@@ -16,9 +16,9 @@ body {
     align-items: center;
   }
   
-  button{
-    margin-left: 20px;
-  }
+button{
+  border: 1px solid black;
+}
 
   form {
     background-color: #fff;
