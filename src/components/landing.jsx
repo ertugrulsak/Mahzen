@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <div className="opening-page">
       <img src={Land} alt="Welcome" className="opening-image" />
-      <h1 className="welcome-message">Hoş Geldiniz...</h1>
+      <h1 className="welcome-message">Hoş Geldiniz!!</h1>
     </div>
   );
 };
