@@ -29,8 +29,6 @@ const SignUpForm = () => {
 
   return (
     <div>
-   
-    
     <div>
       <h2>Sign Up</h2>
       <form onSubmit={handleSubmit}>
@@ -64,7 +62,7 @@ const SignUpForm = () => {
           />
         </label>
         <br />
-        <button  onClick={ () => navigate("/home")} type="submit"> Sign Up</button>
+        <button  onClick={ () => navigate("/login")} type="submit"> Sign Up</button>
       </form>
     </div>
     </div>

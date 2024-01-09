@@ -1,0 +1,22 @@
+
+
+.navbar-component {
+    background-color: beige; 
+  }
+  
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; 
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .navbar-element {
+    margin-right: 10px;
+  }
+  
+  .navbar-element a {
+    text-decoration: none;
+  }
+  

@@ -1,15 +1,13 @@
-// Navbar.js
-
+import { Link } from 'react-router-dom';
 import React from 'react';
-import { Navigate } from "react-router-dom";// Eğer sayfalar arası geçiş yapacaksanız React Router kullanabilirsiniz
+import '../Css/navbar.css';
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/login">Login</Link></li>
-        <li><Link to="/signup">Signup</Link></li>
+    <nav className='navbar-component'>
+      <ul className='navbar-list'>
+        <li className='navbar-element'><Link to="/signup">Signup</Link></li>
+        <li className='navbar-element'><Link to="/login">Login</Link></li>
       </ul>
     </nav>
   );

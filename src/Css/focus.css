@@ -48,6 +48,7 @@ button {
   border-radius: 7px;
   color: blue;
   cursor: pointer;
+  margin-right: 5px;
 }
 
 .buttons {
