@@ -1,0 +1,70 @@
+
+.navbar {
+    background-color: #333;
+    padding: 10px;
+}
+  
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 20px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar li.active {
+    border-bottom: 2px solid #fff;
+}
+
+.navbar-container {
+    display: flex;
+}
+
+.navbar-container button {
+    margin: 12px;
+}
+
+/* Movie Container */
+.movie-container {
+    margin: 20px;
+}
+
+.movie-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Movie List */
+.movie-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.movie-image {
+    width: 180px; /* Eşit genişlik ve yükseklik değeri */
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.movie-title {
+    margin-top: 5px;
+    font-size: 14px; /* Daha küçük bir font boyutu */
+    font-weight: bold;
+    width: 120px; /* Eşit genişlik değeri */
+    white-space: nowrap; /* Uzun metinleri satır sonunda kes */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Metin fazla uzunsa üç nokta ile göster */
+}
